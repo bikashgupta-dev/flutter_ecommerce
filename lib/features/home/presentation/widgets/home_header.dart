@@ -55,6 +55,16 @@ class HomeHeader extends ConsumerWidget {
           Row(
             children: [
               IconButton(
+                icon: const Icon(Icons.person_outline_rounded),
+                tooltip: 'My Profile',
+                onPressed: () => context.push('/profile'),
+              ),
+              IconButton(
+                icon: const Icon(Icons.receipt_long_outlined),
+                tooltip: 'My Orders',
+                onPressed: () => context.push('/orders'),
+              ),
+              IconButton(
                 icon: const Icon(Icons.favorite_border_rounded),
                 tooltip: 'Wishlist',
                 onPressed: () => context.go('/wishlist'),
